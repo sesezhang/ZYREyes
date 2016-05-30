@@ -14,6 +14,13 @@
 		D12A0C741C1F25BB00C5543B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12A0C721C1F25BB00C5543B /* LaunchScreen.storyboard */; };
 		D12A0C7F1C1F25BB00C5543B /* ZYREyesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0C7E1C1F25BB00C5543B /* ZYREyesTests.swift */; };
 		D12A0C8A1C1F25BB00C5543B /* ZYREyesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0C891C1F25BB00C5543B /* ZYREyesUITests.swift */; };
+		D12A0C981C1F269C00C5543B /* EyesTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0C971C1F269C00C5543B /* EyesTabBarController.swift */; };
+		D12A0C9A1C1F281E00C5543B /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0C991C1F281E00C5543B /* Define.swift */; };
+		D12A0CA61C1F2B2D00C5543B /* TodayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0CA51C1F2B2D00C5543B /* TodayTableViewController.swift */; };
+		D12A0CA81C1F2CA400C5543B /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0CA71C1F2CA400C5543B /* TodayCell.swift */; };
+		D12A0CAA1C1F2CB800C5543B /* TodayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0CA91C1F2CB800C5543B /* TodayModel.swift */; };
+		D12A0CAC1C1F30DA00C5543B /* PastCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0CAB1C1F30DA00C5543B /* PastCollectionViewController.swift */; };
+		D12A0CAE1C1F312A00C5543B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A0CAD1C1F312A00C5543B /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		D12A0C851C1F25BB00C5543B /* ZYREyesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYREyesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12A0C891C1F25BB00C5543B /* ZYREyesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYREyesUITests.swift; sourceTree = "<group>"; };
 		D12A0C8B1C1F25BB00C5543B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12A0C971C1F269C00C5543B /* EyesTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesTabBarController.swift; sourceTree = "<group>"; };
+		D12A0C991C1F281E00C5543B /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		D12A0CA51C1F2B2D00C5543B /* TodayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayTableViewController.swift; sourceTree = "<group>"; };
+		D12A0CA71C1F2CA400C5543B /* TodayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
+		D12A0CA91C1F2CB800C5543B /* TodayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayModel.swift; sourceTree = "<group>"; };
+		D12A0CAB1C1F30DA00C5543B /* PastCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastCollectionViewController.swift; sourceTree = "<group>"; };
+		D12A0CAD1C1F312A00C5543B /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				D12A0C691C1F25BB00C5543B /* AppDelegate.swift */,
+				D12A0C971C1F269C00C5543B /* EyesTabBarController.swift */,
+				D12A0CAD1C1F312A00C5543B /* NavigationController.swift */,
 				D12A0C6B1C1F25BB00C5543B /* ViewController.swift */,
+				D12A0C991C1F281E00C5543B /* Define.swift */,
+				D12A0C9F1C1F297F00C5543B /* Past */,
+				D12A0C9B1C1F294400C5543B /* Today */,
 				D12A0C6D1C1F25BB00C5543B /* Main.storyboard */,
 				D12A0C701C1F25BB00C5543B /* Assets.xcassets */,
 				D12A0C721C1F25BB00C5543B /* LaunchScreen.storyboard */,
@@ -123,6 +142,72 @@
 				D12A0C8B1C1F25BB00C5543B /* Info.plist */,
 			);
 			path = ZYREyesUITests;
+			sourceTree = "<group>";
+		};
+		D12A0C9B1C1F294400C5543B /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				D12A0C9E1C1F296A00C5543B /* Controller */,
+				D12A0C9D1C1F296100C5543B /* View */,
+				D12A0C9C1C1F295300C5543B /* Model */,
+			);
+			name = Today;
+			sourceTree = "<group>";
+		};
+		D12A0C9C1C1F295300C5543B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D12A0C9D1C1F296100C5543B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D12A0C9E1C1F296A00C5543B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D12A0CAB1C1F30DA00C5543B /* PastCollectionViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D12A0C9F1C1F297F00C5543B /* Past */ = {
+			isa = PBXGroup;
+			children = (
+				D12A0CA21C1F299700C5543B /* Controller */,
+				D12A0CA11C1F299000C5543B /* View */,
+				D12A0CA01C1F298800C5543B /* Model */,
+			);
+			name = Past;
+			sourceTree = "<group>";
+		};
+		D12A0CA01C1F298800C5543B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D12A0CA91C1F2CB800C5543B /* TodayModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D12A0CA11C1F299000C5543B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D12A0CA71C1F2CA400C5543B /* TodayCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D12A0CA21C1F299700C5543B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D12A0CA51C1F2B2D00C5543B /* TodayTableViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +341,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12A0CAC1C1F30DA00C5543B /* PastCollectionViewController.swift in Sources */,
+				D12A0C981C1F269C00C5543B /* EyesTabBarController.swift in Sources */,
 				D12A0C6C1C1F25BB00C5543B /* ViewController.swift in Sources */,
+				D12A0C9A1C1F281E00C5543B /* Define.swift in Sources */,
+				D12A0CAE1C1F312A00C5543B /* NavigationController.swift in Sources */,
 				D12A0C6A1C1F25BB00C5543B /* AppDelegate.swift in Sources */,
+				D12A0CAA1C1F2CB800C5543B /* TodayModel.swift in Sources */,
+				D12A0CA61C1F2B2D00C5543B /* TodayTableViewController.swift in Sources */,
+				D12A0CA81C1F2CA400C5543B /* TodayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

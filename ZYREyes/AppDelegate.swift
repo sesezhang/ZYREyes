@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // UIWindow()相当于OC中的[[UIWindow alloc]init]
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.backgroundColor = UIColor.whiteColor()
+        self.window!.makeKeyAndVisible()
+        
+        self.window?.rootViewController = EyesTabBarController()
         return true
     }
 
